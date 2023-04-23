@@ -10,6 +10,9 @@ public class ServiceCar {
         if (numberOfCars == null){
             return carList;
         }
+        if (numberOfCars <= 0){
+            numberOfCars = 0;
+        }
 
         return carList.stream().limit(numberOfCars).collect(Collectors.toList());
 
