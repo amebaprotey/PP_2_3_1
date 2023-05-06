@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 public class UserService {
-    
+
     private Dao userDao;
     @Autowired
     public UserService(Dao userDao) {

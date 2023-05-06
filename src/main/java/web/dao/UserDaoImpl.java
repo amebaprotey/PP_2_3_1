@@ -7,7 +7,6 @@ import web.model.User;
 import javax.persistence.*;
 import java.util.List;
 @Component
-@Transactional(readOnly = true)
 public class UserDaoImpl implements Dao{
 
     @PersistenceContext
